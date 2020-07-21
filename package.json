@@ -9,7 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/manishgandotra74/vmtask"
+    "url": "https://github.com/manishgandotra74/vmtask",
+    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
+    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
   },
   "author": "Manish Gandotra",
   "license": "ISC",
