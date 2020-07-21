@@ -2,7 +2,7 @@
   "name": "vumonictask",
   "version": "1.0.0",
   "description": "Backend api Task",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
@@ -26,6 +26,7 @@
     "mongoose": "^5.9.25",
     "multer": "^1.4.2",
     "mysql": "^2.18.1",
-    "netlify-lambda": "^2.0.1"
+    "netlify-lambda": "^2.0.1",
+    "serverless-http": "^2.5.0"
   }
 }

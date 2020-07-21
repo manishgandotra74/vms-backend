@@ -31,10 +31,10 @@ app.use(function (req, res, next) {
 mongoose.connect('mongodb+srv://Manish:u5NldlSW5vLy3qjy@letstalk-nviuu.mongodb.net/Article-Data?ssl=true&authSource=admin&retryWrites=true&w=majority',
  {useNewUrlParser: true})
 /// routes files 
-const user = require('./routes/user');
-const article = require('./routes/article');
-const topic = require('./routes/topic');
-const upload = require('./routes/upload');
+const user = require('../routes/user');
+const article = require('../routes/article');
+const topic = require('../routes/topic');
+const upload = require('../routes/upload');
 
 app.use('/upload', upload)
 app.use('/user', user)
