@@ -41,11 +41,10 @@ app.use('/user', user)
 app.use('/article', article)
 app.use('/topic', topic)
 
-app.get('/test', function (req,res){
+app.get('/', function (req,res){
   res.json({data :'test'});
 })
 app.listen(process.env.PORT || 4000)
 
-module.exports.handler = serverless(app);
 
-// module.exports = app;
+module.exports = app;
