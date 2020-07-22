@@ -3,7 +3,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 var mongoose = require('mongoose');
-const serverless = require('serverless-http');
 
 var app = express();
 app.use(cors());
