@@ -44,8 +44,7 @@ app.use('/topic', topic)
 app.get('/test', function (req,res){
   res.json({data :'test'});
 })
-app.listen(4000)
-
+app.listen(process.env.PORT || 3000)
 
 module.exports.handler = serverless(app);
 
