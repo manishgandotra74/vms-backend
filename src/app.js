@@ -19,7 +19,7 @@ app.set('view engine', 'pug');
 
 /// cross origin hndling 
 app.use(function (req, res, next) {
-  res.header('Access-Control-Allow-Origin', 'https://reverent-northcutt-bab1fc.netlify.app/');
+  res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET, POST');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
   res.header("Access-Control-Allow-Credentials", "true");
