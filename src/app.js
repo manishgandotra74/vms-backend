@@ -27,7 +27,7 @@ app.use(function (req, res, next) {
 });
 
 // mongoose connection 
-mongoose.connect('mongodb+srv://Manish:u5NldlSW5vLy3qjy@letstalk-nviuu.mongodb.net/Article-Data?ssl=true&authSource=admin&retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://Manish:u5NldlSW5vLy3qjy@letstalk-nviuu.mongodb.net/Article-Data-table?ssl=true&authSource=admin&retryWrites=true&w=majority',
  {useNewUrlParser: true})
 /// routes files 
 const user = require('../routes/user');
